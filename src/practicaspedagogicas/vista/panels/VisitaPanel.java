@@ -435,7 +435,7 @@ public class VisitaPanel extends JPanel {
     private void estTabla(JTable t) {
         t.setFont(new Font("Segoe UI", Font.PLAIN, 11)); t.setRowHeight(24);
         t.getTableHeader().setFont(new Font("Segoe UI", Font.BOLD, 11));
-        t.getTableHeader().setBackground(AZUL); t.getTableHeader().setForeground(Color.WHITE);
+        t.getTableHeader().setBackground(AZUL); t.getTableHeader().setForeground(Color.BLACK);
         t.setSelectionBackground(new Color(0xD6,0xE4,0xF0));
         t.setGridColor(new Color(0xE0,0xE0,0xE0));
     }

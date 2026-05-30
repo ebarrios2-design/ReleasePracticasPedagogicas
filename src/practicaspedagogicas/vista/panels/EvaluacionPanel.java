@@ -144,7 +144,7 @@ public class EvaluacionPanel extends JPanel {
         tablaEstudiantes.setRowHeight(26);
         tablaEstudiantes.getTableHeader().setFont(new Font("Segoe UI", Font.BOLD, 12));
         tablaEstudiantes.getTableHeader().setBackground(AZUL);
-        tablaEstudiantes.getTableHeader().setForeground(Color.WHITE);
+        tablaEstudiantes.getTableHeader().setForeground(Color.BLACK);
         tablaEstudiantes.setSelectionBackground(new Color(0xD6,0xE4,0xF0));
         tablaEstudiantes.setGridColor(new Color(0xE0,0xE0,0xE0));
         tablaEstudiantes.getColumnModel().getColumn(0).setMaxWidth(50);

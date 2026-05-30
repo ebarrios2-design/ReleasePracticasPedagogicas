@@ -155,7 +155,7 @@ public class MiEvaluacionPanel extends JPanel {
         tablaRetro.setRowHeight(50);
         tablaRetro.getTableHeader().setFont(new Font("Segoe UI", Font.BOLD, 11));
         tablaRetro.getTableHeader().setBackground(AZUL);
-        tablaRetro.getTableHeader().setForeground(Color.WHITE);
+        tablaRetro.getTableHeader().setForeground(Color.BLACK);
         tablaRetro.setGridColor(new Color(0xE0,0xE0,0xE0));
         tablaRetro.setAutoResizeMode(JTable.AUTO_RESIZE_ALL_COLUMNS);
         // Wrap en celdas

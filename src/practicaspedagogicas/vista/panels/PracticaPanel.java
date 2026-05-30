@@ -103,7 +103,7 @@ public class PracticaPanel extends JPanel {
         tabla.setRowHeight(26);
         tabla.getTableHeader().setFont(new Font("Segoe UI", Font.BOLD, 12));
         tabla.getTableHeader().setBackground(AZUL);
-        tabla.getTableHeader().setForeground(Color.WHITE);
+        tabla.getTableHeader().setForeground(Color.BLACK);
         tabla.setSelectionBackground(new Color(0xD6, 0xE4, 0xF0));
         tabla.setGridColor(new Color(0xE0, 0xE0, 0xE0));
         tabla.getColumnModel().getColumn(0).setMaxWidth(45);
