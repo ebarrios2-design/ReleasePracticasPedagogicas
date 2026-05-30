@@ -29,7 +29,7 @@ public class InstitucionPanel extends JPanel {
                         txtMunicipio, txtDepartamento, txtRector,
                         txtCorreo, txtTelefono;
     private JComboBox<String> cmbZona;
-    private JCheckBox   chkPreescolar, chkPrimaria, chkSecundaria, chkMedia;
+    private JCheckBox   chkPregrado, chkBasico, chkposgrado, chkMedia;
     private JButton     btnGuardar, btnNuevo, btnEliminar;
 
     private InstitucionReceptora seleccionada = null;
@@ -123,10 +123,10 @@ public class InstitucionPanel extends JPanel {
         pnlNiveles.setBackground(Color.WHITE);
         pnlNiveles.setAlignmentX(LEFT_ALIGNMENT);
         pnlNiveles.setMaximumSize(new Dimension(Integer.MAX_VALUE, 54));
-        chkPreescolar = chk("Preescolar"); chkPrimaria  = chk("Primaria");
-        chkSecundaria = chk("Secundaria"); chkMedia      = chk("Media");
-        pnlNiveles.add(chkPreescolar); pnlNiveles.add(chkPrimaria);
-        pnlNiveles.add(chkSecundaria); pnlNiveles.add(chkMedia);
+        chkPregrado = chk("Pregrado"); chkBasico  = chk("Basico");
+        chkposgrado = chk("posgrado"); chkMedia      = chk("Medio");
+        pnlNiveles.add(chkPregrado); pnlNiveles.add(chkBasico);
+        pnlNiveles.add(chkposgrado); pnlNiveles.add(chkMedia);
         form.add(pnlNiveles);
         form.add(Box.createVerticalStrut(6));
 
@@ -186,9 +186,9 @@ public class InstitucionPanel extends JPanel {
         txtDepartamento.setText(seleccionada.getDepartamento());
         cmbZona.setSelectedItem(seleccionada.getZona());
         String niv = nv(seleccionada.getNivelEducativo());
-        chkPreescolar.setSelected(niv.contains("Preescolar"));
-        chkPrimaria.setSelected(niv.contains("Primaria"));
-        chkSecundaria.setSelected(niv.contains("Secundaria"));
+        chkPregrado.setSelected(niv.contains("Pregrado"));
+        chkBasico.setSelected(niv.contains("Basico"));
+        chkposgrado.setSelected(niv.contains("posgrado"));
         chkMedia.setSelected(niv.contains("Media"));
         txtRector.setText(nv(seleccionada.getNombreRector()));
         txtCorreo.setText(nv(seleccionada.getCorreoContacto()));
@@ -256,8 +256,8 @@ public class InstitucionPanel extends JPanel {
         txtDepartamento.setText(""); txtRector.setText("");
         txtCorreo.setText(""); txtTelefono.setText("");
         cmbZona.setSelectedIndex(0);
-        chkPreescolar.setSelected(false); chkPrimaria.setSelected(false);
-        chkSecundaria.setSelected(false); chkMedia.setSelected(false);
+        chkPregrado.setSelected(false); chkBasico.setSelected(false);
+        chkposgrado.setSelected(false); chkMedia.setSelected(false);
         tabla.clearSelection();
     }
 
@@ -265,9 +265,9 @@ public class InstitucionPanel extends JPanel {
 
     private String construirNiveles() {
         StringBuilder sb = new StringBuilder();
-        if (chkPreescolar.isSelected()) { if (sb.length()>0) sb.append(","); sb.append("Preescolar"); }
-        if (chkPrimaria.isSelected())   { if (sb.length()>0) sb.append(","); sb.append("Primaria"); }
-        if (chkSecundaria.isSelected()) { if (sb.length()>0) sb.append(","); sb.append("Secundaria"); }
+        if (chkPregrado.isSelected()) { if (sb.length()>0) sb.append(","); sb.append("Pregrado"); }
+        if (chkBasico.isSelected())   { if (sb.length()>0) sb.append(","); sb.append("Basico"); }
+        if (chkposgrado.isSelected()) { if (sb.length()>0) sb.append(","); sb.append("posgrado"); }
         if (chkMedia.isSelected())      { if (sb.length()>0) sb.append(","); sb.append("Media"); }
         return sb.toString();
     }
