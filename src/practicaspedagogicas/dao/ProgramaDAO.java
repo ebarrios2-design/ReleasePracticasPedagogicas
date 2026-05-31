@@ -11,15 +11,7 @@ import java.util.logging.Logger;
 
 /**
  * ProgramaDAO - CRUD para la tabla PROGRAMA en Oracle 10g XE.
- *
- * Cambios respecto a MySQL:
- *  - INSERT usa RETURNING id INTO ? en lugar de RETURN_GENERATED_KEYS
- *  - Secuencia SEQ_PROGRAMA genera los IDs automáticamente
- *  - NUMBER(1) en lugar de BOOLEAN
- *  - SYSDATE en lugar de CURRENT_TIMESTAMP
- *  - VARCHAR2 en lugar de VARCHAR
- *
- * @version 1.0 - Oracle 10g XE
+- Oracle 10g XE
  */
 public class ProgramaDAO implements DAO<Programa, Integer> {
 

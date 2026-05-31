@@ -27,7 +27,7 @@ public class Programa {
 
     /** Constructor completo para nuevos registros. */
     public Programa(String nombre, String codigoSnies, String facultad,
-                    String modalidad, String nivel, boolean acreditado) {
+            String modalidad, String nivel, boolean acreditado) {
         this.nombre      = nombre;
         this.codigoSnies = codigoSnies;
         this.facultad    = facultad;
