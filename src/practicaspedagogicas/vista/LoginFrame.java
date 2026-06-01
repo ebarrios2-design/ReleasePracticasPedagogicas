@@ -277,3 +277,28 @@ public class LoginFrame extends JFrame {
         });
     }
 }
+/*para iniciar sesion sin el login
+public static void main(String[] args) {
+    try {
+        UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
+    } catch (Exception ignored) {}
+
+    SwingUtilities.invokeLater(() -> {
+        if (MODO_DEV) {
+            Usuario dev = new Usuario();
+            dev.setId(1);
+            dev.setNombres("Admin");
+            dev.setApellidos("Dev");
+            dev.setRol(ROL_DEV);
+            dev.setCorreo("dev@test.com");
+            dev.setActivo(true);
+            SesionUsuario.getInstance().setUsuario(dev);
+            new MainFrame(dev).setVisible(true);
+        } else {
+            new LoginFrame().setVisible(true);
+        }
+    });
+}
+import practicaspedagogicas.modelo.Usuario;
+import practicaspedagogicas.util.SesionUsuario;
+*/
