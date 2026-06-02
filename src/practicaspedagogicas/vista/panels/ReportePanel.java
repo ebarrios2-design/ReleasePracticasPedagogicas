@@ -131,7 +131,7 @@ public class ReportePanel extends JPanel {
         tablaResultados.setRowHeight(26);
         tablaResultados.getTableHeader().setFont(new Font("Segoe UI", Font.BOLD, 12));
         tablaResultados.getTableHeader().setBackground(AZUL);
-        tablaResultados.getTableHeader().setForeground(Color.WHITE);
+        tablaResultados.getTableHeader().setForeground(Color.BLUE);
         tablaResultados.setSelectionBackground(new Color(0xD6,0xE4,0xF0));
         tablaResultados.setGridColor(new Color(0xE0,0xE0,0xE0));
         tablaResultados.setAutoResizeMode(JTable.AUTO_RESIZE_ALL_COLUMNS);
